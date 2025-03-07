@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import FlipCard from "./components/FlipCard";
 
 function App() {
   const cardsList = [
@@ -42,31 +43,11 @@ function App() {
           {cardsList.length}
         </p>
       </div>
-      <div className="flipcardContainer" onClick={handleFlip}>
-        <div className={`flipcard ${flipped ? "flipped" : ""}`}>
-          {flipped ? (
-            <div className="flipcard_back">
-              <p>
-                {
-                  cardsList[
-                    getRelativeCurrentCard(currentCard, cardsList.length) - 1
-                  ].back
-                }
-              </p>
-            </div>
-          ) : (
-            <div className="flipcard_front">
-              <p>
-                {
-                  cardsList[
-                    getRelativeCurrentCard(currentCard, cardsList.length) - 1
-                  ].front
-                }
-              </p>
-            </div>
-          )}
-        </div>
-      </div>
+      <FlipCard
+        flipped={flipped}
+        handleFlip={handleFlip}
+        card={cardsList[getRelativeCurrentCard(currentCard, cardsList.length) - 1]}
+      />
       <button
         onClick={() => {
           setCurrentCard(currentCard + 1);
