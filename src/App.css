@@ -1,0 +1,111 @@
+/* Improved root background */
+
+
+/* Heading Section */
+#heading {
+  color: white;
+  padding: 10px 20px;
+  background: rgba(0, 0, 255, 0.7); /* Transparent blue */
+  font-family: 'Cursive';
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Description Section */
+#description {
+  display: inline-flex;
+  color: white;
+  background: linear-gradient(to bottom, rgb(37, 102, 173), rgb(11, 43, 73));
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Card Number Display */
+#numberOfCards {
+  background: rgba(255, 228, 196, 0.8);
+  padding: 8px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Flip Card Container */
+.flipcardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(27, 224, 96, 0.2); /* Subtle transparency */
+  width: 70%;
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+  perspective: 1000px;
+}
+
+/* Flip Card */
+.flipcard {
+  position: relative;
+  width: 300px;
+  height: 180px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.flipcard.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back of the Card */
+.flipcard_front,
+.flipcard_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Front Card Style */
+.flipcard_front {
+  background: linear-gradient(to top, #ff7e5f, #feb47b);
+  color: white;
+}
+
+/* Back Card Style */
+.flipcard_back {
+  background: linear-gradient(to top, #6a11cb, #2575fc);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Next Button */
+button {
+  margin-top: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(to right, #dd2476, #ff512f);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
