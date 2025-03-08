@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     background: linear-gradient(to bottom, rgb(27, 99, 171), rgb(4, 18, 39));
     font-family: 'Poppins', sans-serif;
     padding-top: 20px;
