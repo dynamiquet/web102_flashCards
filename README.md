@@ -1,4 +1,4 @@
-# Web Development Project 2 - *Name of App Here*
+# Web Development Project 2 - *Flashcards_Part1*
 
 Submitted by: **Dynamique Twizere**
 
@@ -44,6 +44,50 @@ GIF created with ...
 This project had significantly more independent elements than the last one. It turned out to be a good challenge getting elements aligned exactly how I wanted them to be aligned. It required use of flexboxes and other display models, some of which I had never used before.
 
 It was also another challenge to get the app to work on conditionality. For example, applying CSS based on whether the flipcard is facing front or back.
+
+<br></br>
+
+# Web Development Project 2 - *Flashcards_Part2*
+
+Submitted by: **Dynamique Twizere**
+
+This web app: **An entertaining web app that uses flip cards to help users brush up on their knowledge about Africa**
+
+Time spent: **7** hours spent in total
+
+## Required Features
+
+The following **required** functionalities are completed:
+- [ ] **The user can enter their guess in a box before seeing the flipside of the card**
+- [ ] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+
+- [ ] **A back button displayed on the card can be used to return to the previous card in a set sequence**
+- [ ] **A next button displayed on the card can be used to navigate to the next card in a set sequence**
+
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented required features:
+
+<div>
+    <a href="https://www.loom.com/share/ecc877ea514a4e0db8259663f625c53a">
+      <p>Video Walkthrough</p>
+    </a>
+    <a href="https://www.loom.com/share/ecc877ea514a4e0db8259663f625c53a">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/ecc877ea514a4e0db8259663f625c53a-abd20554a1d4d776-full-play.gif">
+    </a>
+</div>
+
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with Loot
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
+
+## Notes
+
+This project was a great learning experience, especially in handling user interactions and dynamic content updates. Implementing the handleSubmit was particularly challenging.
 
 ## License
 
