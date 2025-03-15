@@ -92,8 +92,7 @@
   transform: rotateY(180deg);
 }
 
-/* Next Button */
-button {
+button, #submitButton {
   margin-top: 20px;
   position: relative;
   bottom: 20px;
@@ -109,8 +108,53 @@ button {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
+button:hover, #submitButton:hover {
   background: linear-gradient(to bottom, rgb(13, 61, 112), rgb(34, 86, 135));
   transform: scale(1.15);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#submitButton {
+  position: relative;
+  top: 0px;
+}
+
+#bottomMenu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  background-color: #6498d02b;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#answerInput {
+  background: linear-gradient(to bottom, #6498d0, #225687);
+  color: white;
+  margin: 20px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+#answerInput::placeholder {
+  color: rgba(230, 230, 230, 0.914);
+}
+
+#answerInput:focus {
+  outline: none;
+  background: linear-gradient(to bottom, rgb(13, 61, 112), rgb(34, 86, 135));
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#feedback {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(8, 237, 23);
+  text-align: center;
 }
