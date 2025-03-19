@@ -22,7 +22,7 @@ function App() {
     { front: "Which African region is known for producing the world's most expensive coffee, Kopi Luwak?", back: "Ethiopia" },
     { front: "What is Africa’s only Spanish-speaking country?", back: "Equatorial Guinea" },
     { front: "Which country is the world's largest producer of uranium, a key element in nuclear energy?", back: "Niger" },
-    { front: "What African country’s capital is named after an American president?", back: "Liberia" },
+    { front: "What African country’s capital is named after an American president?", back: " Liberia" },
     { front: "Which African kingdom created the first known heart surgery tools over 3,000 years ago?", back: "Egypt" },
     { front: "Which African country was the first to legalize cryptocurrency as an official currency?", back: "Central African Republic" }
   ];
